@@ -1,0 +1,26 @@
+// Question 5:
+// Given an array of integers, find the pair of adjacent elements that has the largest product 
+// and return that product.
+// Example
+// For inputArray = [3, 6, -2, -5, 7, 3], the output should be adjacentElementsProduct(inputArray) = 21.
+// 7 and 3 produce the largest product.
+
+
+
+function adjacentElementsProduct(inputArray) {
+    let maxProduct = 0; // We are just initializing the maxProduct 
+    for (let i = 1; i < inputArray.length - 1; i++) {
+    //   const current = inputArray[i];
+    //   const next = inputArray[i + 1];
+      const product = inputArray[i] * inputArray[i+1]; 
+      // Here we are initiliazing the product variable to multiply the current and the next state of array. inputArray[i] is the current state
+      // while inputArray[i+1] is the next element of the array. Then we multiply both as per the question.
+      if (product > maxProduct) {
+        maxProduct = product;
+      }
+    }
+    return maxProduct;
+  }
+  console.log(adjacentElementsProduct([3,6,-2,-5,7,3]));
+  
+  
