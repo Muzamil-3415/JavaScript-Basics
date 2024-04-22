@@ -1,0 +1,19 @@
+// Question 6:
+// Below we will define an n-interesting polygon. Your task is to find the area of a polygon for a given n.
+// Example n= 1, output = 1; For n = 2, the output should be output= 5; For n = 3, 
+// the output should be output= 13. For n = 4, the output should be output = 25.
+
+
+function shapeArea(n){
+    if(n==1){                     // Here we are checking if n is 1 then return 1 as per the question.
+        return 1;
+    }
+    else{
+        firstNum = n**2; // then we initiliaze the firstNum for example any number other than 1 if we get the firstNum then we take the square of the number.
+        secondNum = (n-1)**2; //then if we get any other number we will minus it by 1 and then take the square of the number. 
+        area = firstNum + secondNum; // Here we add both the numbers to get the area. 
+        return area;
+    }
+}
+console.log(shapeArea(3));
+
