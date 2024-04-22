@@ -1,0 +1,26 @@
+// Question 2:
+// Write a program to combine two arrays
+// firstInput = [ 1, 2, 3 ]
+// secondInput = [ 4, 5, 6 ]
+// Output: = [ 1, 2, 3, 4, 5, 6]
+
+Answer:
+Method 1:
+let firstInput = [1,2,3];
+let secondInput = [4,5,6];
+let newOutput = [...firstInput,...secondInput];
+console.log(newOutput);
+
+/////////////////////////////////
+
+Method 2:
+let firstInput = [1,2,3];
+let secondInput = [4,5,6];
+let newOutput = firstInput.concat(secondInput);
+console.log(newOutput);
+
+Method 3:
+let firstInput = [1,2,3];
+let secondInput = [4,5,6];
+let newOutput = [firstInput.concat(secondInput)];
+console.log(newOutput);
